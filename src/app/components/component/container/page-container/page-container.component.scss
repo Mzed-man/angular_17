@@ -1,0 +1,27 @@
+.page-container {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+
+  .page-header {
+    width: 100%;
+    height: var(--header-height);
+    max-height: var(--header-height);
+
+    overflow: hidden;
+  }
+
+  .page-content {
+    flex: 1;
+    min-height: calc(100vh - var(--header-height));
+  }
+
+  .page-footer {
+    background-color: var(--color-third);
+  }
+
+}

@@ -1,0 +1,27 @@
+<app-page-container>
+  <ng-container main>
+    <div class="main-con">
+      <div class="left table">
+        <div class="line header gd col-4">
+          <div class="col head">
+            First Name
+          </div>
+          <div class="col head">
+            Last Name
+          </div>
+          <div class="col head">
+            Phone Number
+          </div>
+          <div class="col head">
+          </div>
+        </div>
+        @for (contact of contacts(); track $index) {
+          <app-contact-in-list (deleteEmitter)="delete($event)" [contact]="contact"  ></app-contact-in-list>
+        }
+      </div>
+      <div class="creation-form">
+        <app-contact-create [contacts]="contacts()" ></app-contact-create>
+      </div>
+    </div>
+  </ng-container>
+</app-page-container>

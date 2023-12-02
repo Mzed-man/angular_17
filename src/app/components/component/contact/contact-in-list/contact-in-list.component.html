@@ -1,0 +1,22 @@
+@if (contact !== null) {
+    <div class="line gd col-4">
+        <div class="col">
+            {{ contact.firstName }}
+        </div>
+        <div class="col">
+            {{ contact.lastName  ?? '---'| uppercase }}
+        </div>
+        <div class="col">
+            {{ contact.phoneNumber }}
+        </div>
+        <div class="col">
+            <button class="red" (click)="delete()" >
+                Supprimer
+            </button>
+        </div>
+    </div>
+} @else {
+    <div class="message error">
+        There is an error, please try again later !
+    </div>
+}

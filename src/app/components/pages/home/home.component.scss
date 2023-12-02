@@ -1,0 +1,27 @@
+.main-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .left {
+        width: 70%;
+        border-radius: 5px;
+        overflow: hidden;
+
+        box-shadow: 0 0 4px var(--color-black);
+        margin: 1rem;
+    }
+
+    .creation-form {
+
+        padding: 1rem;
+
+        width: calc(30% - 1rem);
+        max-width: calc(30% - 1rem);
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+    }
+}
